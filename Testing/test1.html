@@ -7,6 +7,9 @@
     <title>test1</title>
 </head>
 <body>
+
+    <img src="images\Stirge.png"width="200" height="142,5" alt="Banshee">
+
     <h1>DETTA ÄR EN RUBRIK</h1>
     <h2>DETTA ÄR EN RUBRIK</h2>
     <h3>DETTA ÄR EN RUBRIK</h3>
@@ -25,6 +28,47 @@
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor sapiente, quo ut molestias dolorem provident alias cum eaque expedita magni eum ea soluta odio illum esse doloremque modi delectus perspiciatis.</p>
 
 <p>Lorem ipsum dolor sit amet.</p>
+<a href="https://www.google.com" target="_blank">
+    <!--måste ha https:// annars letar den efter en fil i mappen
+    du måste ha ett ankar ord fungerar inte med bara länk-->
+    google
+</a>
+<p>relativa länker(interna)</p>
+<a href="test.html"></a>test<br>
+<a href="images\Water-room2.png" target="_blank">bild</a>
+<!--du får inte använda c:// gå istället
+direkt från din image folder i din arbetsmapp-->
+
+<h3>länk auto nedladdning</h3>
+<a href="images\Water-room2.png"download>download above picture <picture></picture></a>
+
+<h3>länk med bild as link downloads if clicked</h3><!--title för popup beskrivande text-->
+<a href="images\Water-room2.png" download title="Ladda ner Water-room2"><img src="images\Water-room2.png" height= "500" width="500"
+    alt="WaterRoom"></a><!--alt="WaterRoom" visas om det inte hittar bilden samt om du tex är blind och "läser hemsidan"-->
+
+
+<h1>List</h1>
+
+<ul><!--unordered list bar punkt sen text-->
+    <li>smör</li>
+</ul>
+
+<ol><!--ordered list dvs 1. 2.-->
+    <li>hej</li>
+    <li>boop</li>
+</ol>
+
+<h3>test remote bild</h3><!--bild från webben-->
+<img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ8NDQ0NFREWFhURFRUYHSggGBolGxUVIT0hJSkrLi4uFx81ODMvOCgtLisBCgoKDg0OGBAPFi0dFRktKys3LS0rKystKystLSstKystKysrLSsrLS03Ky0tKy8rKy0tKy0rKystLSstLSstLf/AABEIALcBEwMBIgACEQEDEQH/xAAbAAEBAQADAQEAAAAAAAAAAAAAAQIDBAYFB//EADQQAAICAgAEBQEGBAcAAAAAAAABAhEDBAUSITEGE0FRYXEiIzKBkaFCUoLwBxVicrGy0f/EABgBAQEBAQEAAAAAAAAAAAAAAAABAgME/8QAHhEBAAMAAgMBAQAAAAAAAAAAAAECERIhAzFBMhP/2gAMAwEAAhEDEQA/AP0ghQBAABAUAQyzRGBgpRQAFIAAKFQUAABQBCFAEIUAZJRoMDNCilAyCgCEKCCAoKMMyzbMkGaKWgB3AAVEAAAAgAjKQAAUCAAAAAAKAIAAIAAICgCApAJQKKAhDVCgMgtCgIRmiMDDM0boUBmiG6AV26JRsgRiiUboUBgGqJQGQaolAQFIAAAAAAAAAIUAQFIAIUAQFIBCgACFIAAAEIzRGBkFoqQEoFooHZBSACFAEFFAGaFFIBKFFIBKFFsWBmgaIBAUAQhQBAAAIUgACyAAAABABSAACFIwBQUBQAA7JCkAAACAoAhCgDINEoDINUSgIC0KAgLQAhCgCEbNHlvH0My1oZsORwlhmpLltST90/2+jM3txjViNl6Y4trZhii55JcsV+bfwkdTh3EufSw7WZRxvJhhllFPpzON1G/f2PJeKuM43jfm5oweR8mPHdf0r3bM38mR17Ijt3ON+I82aHk6KWGU6T2czpY4P+KKV9f76dzp8FWxwrLKextZdnUyr7x5FKUseWrU49X37V8r2Ohrcac4xzPHCEFLynF03Lqqdfkfczx8/BySxSjCarpTj8dux5uV/wBN7Hp9XV8VcPyulsRjL+XIpQf7qmcubxBqQV+Y5/7It/u6R+JQ2Hr7M4ZHbxZJY388sqv9D1+tsxy4ueNeja7q6X69jc+a+HGHqNzxioNcmtKVtr7eRQfa30SZ9HgXiPX3bhBvHmjfNgyNc9L1j/Mvp+dHgt7LcVGvtPp7y96+p5fY2Z480Z4pShPG7jOLalGS9bM08197XjD99s4NffwZZ5MePLjnkwtLLCMk5Y7urXp2f6M894O8VY93XfnSjDZwRvMm1FTj6ZF8dOvs/wAjznhDXm+NSy45PleHJPYT9U4pRj81Jxf5M9H9I6z6xj9MARToyAAAAAOyQ0AMgooCAtCgIC0AIAAIAUCUKKAMgoAhDRAIfM8Q6UtjVyY4dZ1cV7/B9QlEmNjB+S8L0OJz5deUdmePFKSxRmnHHjV+76evq/TocG9rZVmy6+aONPDNcjdZKm1bcX8dP7R+wUdfHo4YTnljixrJN3OaiueT+pzjxZ9am2vyDFglGXlW2+aLjFdb69We6hJQxuTk4xhF9b6Ul7HptjUx5IyUoq5LrJJc3TqnZ4bxQpqOXUhN1FR55VTlFrqvgzauQn1+VbeR5c+bIuqnlyTT905On+h6XgEnGHK/w0n9D5GTV5Jzj6K+q7V2R9HX2OXFFR6txSbJERKy5djZby3HurUfj3Z87Yw9XP37v0PoaePmk+ZfZrrfZr2+hwcSi6fqhNYIlx8H8Pb2y/P1cXmQxz5J/bxpqVX2k/Zn6l4M4Fk045cuxXn5+VOKal5cI3Sv3bd/kj5H+FedPX2odOZZoSfe6caX/VnuFM6UpH6+ky5SnGpF5joy2DCkaTA0QADtkKQAAABQAICgDJDRAIQ0AIAUCApAIAAIRs1RloCNmXIricbiwEsiSbbpJW38H5x4h4rB58ko9Iy55Pmf2pdXF/8ADPY8d3HhxterSv06N0l+p+R8b2JSyf1uMm5NtK6/97Hn8s7PFqsJw2MM/ENbFkUpY82eMHGLpygurf0STP13/L9H01Nbp2+4x9P2PznQ8Nbmtszz48mFSa5YOLc3HH7K0qPuYdrfh+L7z9jrWvGPSbrxfGdjFp7uZ6ynPVlOS8u/wr1p+lO6+Dl1djFt45eW+v8AFF9JRf09vT8jm3/DmXI5PHyrmknWRu49W2rXfua4LwHLpzyZZyh95Dy+VdY1zJ939EZsQvhXi74ZsTeVfcZlCGXu5wpupr3Svt8n6vHMmrXZ9U12Z+P8dxKTfL+Fd5NOK+V3dnsfDXE8r08XnP7aTjFtU5Y06i2vejNLZ01mvY+aaWQ+Jh2pS7H0MMn6nXkmO9GRyxOtjkjsQkXUclAWUo7YKAiApABSFQAhogEIUgEBRQEBogEBSAQUaFAZoUaIBmhymigfM4zwnHt4+STcX6Sj3TPH7f8Ah7LJOLe0nGPosKjJrmvq7Z+hNnG0SaxPsea0/DksfV5JTf8AqbZ3f8vrufYRHEuGvhy4ZF+hwbvAI5IKNuEk21KNdHXt6noeQrgJgfnOTwHJ8qe1LkVfZWFJv6vmPs6vh6GNJOU5/Mj1XlB4zPGGotL4mLR5eyo7EcLR9Ly0Xy0XDXRjE5oROx5YWMIwkDl5SFHbAYCBCgCFRCoDRAAIQpAIUAAAAIAUAAUCEZSARkN0ZAlENoy0UZoFoMAQooAKFFIM8o5TQAzQo0AJQNUQDlIUFEBSEApCoACgDJDRAICgCAoAgBQABQMgpAAooAhGjRAJRKNADPKDRGBkFAEKAAAAFIUAchCgogKQgAACoBFAhCkAgKAICkAAFAFAAhDTIAAAEBSAACgRkZSAQFAEBQUQAqAAoINshQUQAAAAQUAACAFEAAAAEAoABFACoQoAAACAAAACgQACAAIAAAUACgAiv//Z">
+
+
+<h3>embedded video<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qz0aGYrrlhU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></h3>
+
+<h3>embedded  map<br>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8142.697749154114!2d17.8780710693557!3d59.321693154319114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f75b9dd16af4d%3A0x3996037125378858!2sDrottningholms%20Slott!5e0!3m2!1ssv!2sse!4v1678107214919!5m2!1ssv!2sse" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></h3>
+
+
 
 </body>
 </html>
