@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons</title>
+    <style>
+        .subscribe-button{
+            background-color: rgb(199, 0, 0);
+            color: white;
+            border: none;
+            border-radius: 2px;
+            cursor: pointer;
+            margin-right: 8px;
+            transition: opacity 0.15s;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 16px;
+            padding-right: 16px;
+            vertical-align: top;
+        }
+        .subscribe-button:hover{
+           opacity: 0.8;
+        }
+        .subscribe-button:active{
+            opacity: 0.5;
+        }
+
+        .join-button{
+            background-color: white;
+            color: rgb(8, 86, 181);
+            border-color: rgb(8, 86, 181);
+            border-style: solid;
+            border-width: 1px;
+            border-radius: 2px;
+            cursor: pointer;
+            transition: background-color 0.15s, color 0.15s;
+            padding-top: 9px;
+            padding-bottom: 9px;
+            padding-left: 16px;
+            padding-right: 16px;
+            vertical-align: top;
+        }
+        .join-button:hover{
+            background-color: rgb(8, 86, 181);
+            color: white;
+        }
+        .join-button:active{
+            opacity: 0.7;
+        }
+
+        .tweet-button{
+            background-color: rgb(29, 161, 242);
+            color: white;
+            border: none;
+            height: 36px;/*Padding is better then this*/
+            width: 74px;/*Padding is better then this*/
+            border-radius: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-left: 8px;
+            transition: box-shadow 0.15s;
+            vertical-align: top;
+        }
+        .tweet-button:hover{
+            box-shadow:  5px 5px 10px rgba(0, 0, 0, 0.15); /*value 1 = right value 2 = down value 3 = blur value 4 = color of shadow */
+        }
+        .tweet-button:active{
+            opacity: 0.7;
+        }
+
+        .stretch-button{
+            background-color: green;
+            border:none;
+            color: white;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 16px;
+            padding-right: 16px;
+            border-radius: 2px;
+            margin-top: 8px;
+            transition: padding 0.5s;
+        }
+        .stretch-button:hover{
+            padding-bottom: 20px;
+            padding-right: 32px;
+            padding-left: 32px;
+            padding-top: 20px;
+        }
+        .stretch-button:active{
+            opacity: 0.7;
+        }
+
+        .click3d-button{/*blir error om man döper till 3dclickButton*/
+            background-color: green;
+            border:none;
+            color: white;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 16px;
+            padding-right: 16px;
+            border-radius: 2px;
+            margin-top: 8px;
+            box-shadow: 0px 5px 0px rgb(1, 56, 1);
+            display: block;/*block 	Displays an element as a block element (like <p>). It starts on a new line, and takes up the whole width*/
+            position: relative;/*relative 	The element is positioned relative to its normal position, so "left:20px" adds 20 pixels to the element's LEFT position*/
+            left: 80px;
+        }
+        .click3d-button:active{
+            top: 5px;
+            box-shadow: none;
+            margin-bottom: 0;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <button class="subscribe-button">
+        SUBSCRIBE
+    </button>
+    <button class="join-button">
+        JOIN
+    </button>
+    <button class="tweet-button">
+        Tweet
+    </button>
+    <button class="stretch-button">
+        STRETCH
+    </button>
+    <button class="click3d-button">
+        CLICK ME!
+    </button>
+</body>
+</html>
