@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Practice</title>
+</head>
+<body style="padding-bottom: 1000px;">
+    <!--1-->
+    <div style="
+        display: flex;
+        flex-direction: row;
+        ">
+        <div style="background-color: lightblue;">div 1 text</div>
+        <div style="background-color: lightpink;">div2 <p>text</p></div>
+    </div>
+    <!--2-->
+    <div style="
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        ">
+        <div style="background-color: lightblue; width: 100px;">100px</div>
+        <div style="
+        background-color: lightpink;
+        flex: 1;
+        ">flex 1</div>
+    </div>
+    <!--3-->
+    <div style="
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    "><div style="
+    background-color: lightblue;
+    flex: 1;
+    ">flex1</div>
+    <div style="background-color: lightpink; width: 100px;">100px</div>
+    <div style="background-color: lightblue; flex: 2;">flex 2</div>
+    </div>
+    <!--4-->
+    <div style="
+    height: 70px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: gray;
+
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    "><div style="
+    background-color: lightblue;
+    width: 100px;
+    ">100px</div>
+    <div style="
+    background-color: lightpink;
+    width: 100px;
+    ">100px</div>
+    <div style="
+    background-color: lightblue;
+    width: 100px;
+    ">100px</div>
+    </div>
+    <!--5-->
+    <div style="
+    height: 70px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: gray;
+
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    "><div style="
+    background-color: lightblue;
+    width: 100px;
+    ">100px</div>
+    <div style="
+    background-color: lightpink;
+    width: 100px;
+    ">100px</div>
+    <div style="
+    background-color: lightblue;
+    width: 100px;
+    ">100px</div>
+    </div>
+    <!--6-->
+    <div style="
+    height: 70px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: gray;
+
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    "><div style="
+    background-color: lightblue;
+    width: 100px;
+    ">100px</div>
+    <div style="
+    background-color: lightpink;
+    width: 100px;
+    ">100px</div>
+    <div style="
+    background-color: lightblue;
+    width: 100px;
+    ">100px</div>
+    </div>
+    <!--7-->
+
+    <!--12a-->
+    <div style="
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    ">
+    <div style="background-color: lightblue; width: 200px;">200px</div>
+    <div style="
+    background-color: lightpink;
+    width: 75px;
+    ">75px</div>
+    </div>
+
+    <!--12b-->
+    <div style="
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    ">
+    <div style="
+    background-color: lightblue;
+    width: 50px;
+    ">item1</div>
+    <div style="
+    background-color: lightpink;
+    flex: 1;
+    ">item2</div>
+    <div style="
+    background-color: lightblue;
+     width: 75px;">item3</div>
+    </div>
+
+    <!--12c-->
+    <div style="
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    ">
+    <div style="
+    background-color: lightblue;
+    ">item1</div>
+    <div style="
+    background-color: lightpink;
+    ">item2</div>
+    <div style="
+    background-color: lightblue;
+     ">item3</div>
+    <div style="
+    background-color: lightpink;
+    ">item4</div>
+    </div>
+
+    <!--12d-->
+    <div style="
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+    height: 50px;
+    ">
+        <div style="background-color: lightpink;">item1</div>
+        <div style="background-color: lightpink;">item2</div>
+    </div>
+
+    <!--12e-->
+    <div style="
+    margin-top: 30px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+    border-radius: 4px;
+    padding: 10px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;    
+    ">
+    <div style="
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 10px;
+    align-items: center;
+    ">
+        <div>
+            Home
+        </div>
+        <div>
+            <button style="
+                background-color: rgb(56, 90, 215);
+                color: white;
+                border: none;
+                font-size: 16px;
+                padding-left: 16px;
+                padding-right: 16px;
+                width: 60px;
+                padding-top: 4px;
+                padding-bottom: 4px;
+                font-family: Arial, sans-serif;
+                font-weight: 600;
+                height: 40px;
+                border-radius: 40%;
+                ">
+                14
+            </button>
+        </div>
+    </div>
+    <div style="
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 10px;
+    align-items: center;
+    ">
+        <div>Notification</div>
+        <div>
+            <button>
+                3
+            </button>
+        </div>
+    </div>
+    <div style="
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 10px;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    ">
+        <div>
+            Messages
+        </div>
+        <div>
+            <button>
+                5
+            </button>
+        </div>
+    </div>
+    </div>
+
+</body>
+</html>
