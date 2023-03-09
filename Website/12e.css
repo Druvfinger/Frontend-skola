@@ -1,0 +1,86 @@
+div {
+    font-family: Arial;
+  }
+  
+  .container {
+    margin-top: 30px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(200, 200, 200);
+    width: 300px;
+    border-radius: 6px;
+    margin-bottom: 30px;
+  }
+  
+  .flexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  
+  .notifications {
+    background-color: rgb(49, 109, 245);
+    color: white;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  /*12f*/
+  .purple-box{
+    background-color: rgb(126, 66, 134);
+    color: white;
+    font-size: bold;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 50px;
+    align-items: center;
+    padding-left: 10px;
+  }
+  .home{
+    width: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+  .searchbar-div{
+    flex: 1;
+  }
+  .searchbar{
+    display: inline-block;
+    width: 100%;
+    border-radius: 14px;
+    margin-top: 0;
+    margin-bottom: 0;
+    border: none;
+    min-height: 25px;
+    padding-left: 20px;
+  }
+  .download{
+    width: 100px;
+    margin-left: 60px;
+    
+    
+  }
+  .button-12f{
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    background-color: rgb(126, 66, 134);
+    border-color: white;
+    border-style: solid;
+    border-radius: 4px;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 35px;
+    cursor: pointer;
+  }

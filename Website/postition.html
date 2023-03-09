@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Practice</title>
+</head>
+<body style="
+height: 3000px;
+padding-top: 60px;
+padding-left: 80px;
+">
+<!--top: specifies how far from the top of the window the element is-->
+    <div style="
+        background-color: black;
+        color: white;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 50px;
+        z-index: 100;
+    ">header</div>
+
+    <div style="
+    background-color: green;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 50px;
+    width: 72px;
+    ">
+        sidebar
+        <div style="
+        position: absolute;
+        background-color: red;
+        color: white;
+        top: 0px;
+        right: 0px;
+        ">
+            X
+        </div>
+    </div>
+
+    <div style="
+    position: absolute;
+    background-color: red;
+    color: white;
+    top: 60px;
+    right: 10px;
+    ">
+        absolute
+    </div>
+
+    <div style="
+        background-color: lightblue;
+        height: 200px;
+        width: 200px;
+        position:static;
+        ">div1</div>
+    <div style="
+        background-color: lightpink;
+        height: 200px;
+        width: 200px;
+        position: relative;
+        
+    ">div2
+       <div style="
+       position: absolute;
+       background-color: black;
+       color: white;
+       bottom: 10px;
+       right: 10px;
+       ">
+           5:00
+       </div>
+    </div>
+<!--15a-->
+    <div style="
+    margin-top: 50px;
+    width: 300px;
+    height: 100px;
+    border-width: 1px;
+    border-style: solid;
+    position: relative;
+    margin-bottom: 50px;
+    ">
+        <div>
+            <button style="
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            top: 10px;
+            right: 10px;
+            border: none;
+            background-color: black;
+            color: white;
+            font-size: 24px;
+            ">
+                X
+            </button>
+        </div>
+    </div>
+
+    <!--15b,c,d-->
+    <div style="
+    border-width: 1px;
+    border-style: solid;
+    width: 600px;
+    height: 300px;
+    position: relative;
+    margin-bottom: 50px;
+    ">
+        <div style="
+        background-color: gray;
+        width: 320px;
+        height: 180px;
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+        ">
+         <div>
+            <button style="
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            top: -20px;
+            left: -20px;
+            border: none;
+            background-color: black;
+            color: white;
+            font-size: 24px;
+            ">
+                X
+            </button>
+            <div style="
+            position: absolute;
+            bottom: 8px;
+            right: 8px;
+            width: 30px;
+            height: 20px;
+            background-color: black;
+            color: white;
+            padding-left: 8px;
+            padding-right:8px;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            font-family: Arial;
+            font-weight: 500;
+            font-size: 16px;
+            ">
+            <div>0:29</div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!--15e,f-->
+    <div style="
+    border-width: 1px;
+    border-style: solid;
+    height: 400px;
+    width: 400px;
+    padding-left: 10px;
+    padding-top: 10px;
+    display: inline-block;
+    ">
+        <div style="
+        position: relative;
+        display: inline-block;
+        height: 380px;
+        width: 360px;
+        ">
+            <img src="shirt.jpg" alt="" style="
+            width: 100%;
+            height: 100%;
+            ">
+            <div style="
+            position: absolute;
+            background-color: black;
+            top: 10px;
+            right: 0;
+            height: 40px;
+            width: 100px;
+            color: white;
+            font-weight: 500;
+            align-items: center;
+            ">
+                <div style="
+                padding-top: 10px;
+                padding-bottom: 5px;
+                padding-left: 15px;
+                padding-right: 10px;
+                font-family: Arial;
+                font-weight: 500;
+                font-size: 17px;
+                ">
+                20&percnt; OFF
+                </div>
+            </div>
+            <div style="
+            z-index: 1;
+            position: absolute;
+            background-color: rgba(255,255,255, 0.7);
+            height: 100px;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            padding-left: 120px;
+            padding-right: 100px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            ">
+                <div style="
+                position: relative;
+                display: inline-block;
+                margin-top: 30px;
+                ">
+                    <button style="
+                    position: absolute;
+                    width: 120px;
+                    height: 40px;
+                    background-color: white;
+                    border: solid;
+                    border-width: 2px;
+                    font-family: Arial;
+                    font-size: 16px;             
+                    ">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
