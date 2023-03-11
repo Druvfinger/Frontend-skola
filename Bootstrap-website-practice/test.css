@@ -1,11 +1,30 @@
-.name-input{
-    min-height: 30px;
-    font-size: 16px;
-    padding-left: 6px;
-    flex:1;
-}
-.name-input-container{
-    margin-left: 10px;
+.big-box{/*character-bar-container*/
+    border: 2px solid black;
+    height: 300px;
     display: flex;
+    position: relative;
+}
+.p-box{/*character-picture-container*/
+    border: 2px solid green;
+    width: 200px;
+    margin: 10px;
+}
+.name-icon-box{ /*char bar*/
+    border: 2px solid black;
+    display: grid;
+    width: 200px;
+    margin: 10px;
+    grid-template-columns:1fr ;
     flex: 1;
+}
+
+.name-box{ /*input box*/
+    margin: 10px;
+    border: 2px solid purple;
+}
+
+.icon-box{ /*condition bar*/
+    margin: 10px;
+    border: 2px solid red;
+
 }

@@ -14,14 +14,14 @@
 <body>
 <!--HEADER-->
 <header class="header">
-
+THIS IS THE HEADER
 </header>
 <!--character-bar-->
     <div class="character-bar-container">
+        <div class="character-picture-container">
+            <img class="character-picture" src="img/Thelkan Mardiki.webp" alt="character-picture">
+        </div> 
         <div class="character-bar">
-            <div class="character-picture-container">
-                <img class="character-picture" src="img/Thelkan Mardiki.webp" alt="character-picture">
-            </div> 
             <div class="input-boxes">
                 <div class="name-input-container">
                     <label class="label" for="name-input">Name</label>
@@ -42,80 +42,78 @@
                     <input class="initiative-input" type="text" placeholder="Initiative">
                 </div>
             </div>
-            <div class="condition-icon-wraper">
-                <div class="condition-bar">
-                    <!--Advantage-->
-                                <div class="condition-icon-container" id="condition-icon-container-Advantage" onclick="toggleConditionAdvantage()">
-                                    <img class="condition-icon" src="img/Condition Icons/Advantage.png" alt="Advantage-icon">
-                                    <div class="condition-text">Adv</div>
-                                </div>
-                    <!--DisAdvantage-->
-                                <div class="condition-icon-container" id="condition-icon-container-DisAdvantage" onclick="toggleConditionDisAdvantage()">
-                                    <img class="condition-icon" src="img/Condition Icons/Disadvantage.png" alt="DisAdvantage-icon">
-                                    <div class="condition-text">DisAdv</div>
-                                </div>
-                    <!--Charmed-->
-                                <div class="condition-icon-container" id="condition-icon-container-Charmed" onclick="toggleConditionCharmed()">
-                                    <img class="condition-icon" src="img/Condition Icons/Charmed.png" alt="Charmed-icon">
-                                    <div class="condition-text">Charmed</div>
-                                </div>
-                    <!--Dodge Action-->
-                                <div class="condition-icon-container" id="condition-icon-container-Dodged" onclick="toggleConditionDodged()">
-                                    <img class="condition-icon" src="img/Condition Icons/Dodge Action.png" alt="Dodged-icon">
-                                    <div class="condition-text">Dodge</div>
-                                </div>
-                    <!--Exhausted-->
-                                <div class="condition-icon-container" id="condition-icon-container-Exhausted" onclick="toggleConditionExhausted()">
-                                    <img class="condition-icon" src="img/Condition Icons/Exhausted.png" alt="Exhausted-icon">
-                                    <div class="condition-text">Exhausted</div>
-                                </div>
-                    <!--Frightened-->
-                                <div class="condition-icon-container" id="condition-icon-container-Frightened" onclick="toggleConditionFrightened()">
-                                    <img class="condition-icon" src="img/Condition Icons/Frightened.png" alt="Frightened-icon">
-                                    <div class="condition-text">Frightened</div>
-                                </div>
-                    <!--Grappled-->
-                                <div class="condition-icon-container" id="condition-icon-container-Grappled" onclick="toggleConditionGrappled()">
-                                    <img class="condition-icon" src="img/Condition Icons/Grappled.png" alt="Grappled-icon">
-                                    <div class="condition-text">Grappled</div>
-                                </div>
-                    <!--Holding Action-->
-                                <div class="condition-icon-container" id="condition-icon-container-HoldingAction" onclick="toggleConditionHoldingAction()">
-                                    <img class="condition-icon" src="img/Condition Icons/Holding Action.png" alt="HoldingAction-icon">
-                                    <div class="condition-text">Action</div>
-                                </div>
-                    <!--Inspired-->
-                                <div class="condition-icon-container" id="condition-icon-container-Inspired" onclick="toggleConditionInspired()">
-                                    <img class="condition-icon" src="img/Condition Icons/Inspired.png" alt="Inspired-icon">
-                                    <div class="condition-text">Inspired</div>
-                                </div>
-                    <!--Prone-->
-                                <div class="condition-icon-container" id="condition-icon-container-Prone" onclick="toggleConditionProne()">
-                                    <img class="condition-icon" src="img/Condition Icons/Prone.png" alt="Prone-icon">
-                                    <div class="condition-text">Prone</div>
-                                </div>
-                    <!--Reaction Used-->
-                                <div class="condition-icon-container" id="condition-icon-container-ReactionUsed" onclick="toggleConditionReactionUsed()">
-                                    <img class="condition-icon" src="img/Condition Icons/Reaction Used.png" alt="ReactionUsed-icon">
-                                    <div class="condition-text">Reaction</div>
-                                </div>
-                    <!--Poisoned-->
-                                <div class="condition-icon-container" id="condition-icon-container-Poisoned" onclick="toggleConditionPoisoned()">
-                                    <img class="condition-icon" src="img/Condition Icons/Poisoned.png" alt="Poisoned-icon">
-                                    <div class="condition-text">Poisoned</div>
-                                </div>
-                    <!--Stunned-->
-                                <div class="condition-icon-container" id="condition-icon-container-Stunned" onclick="toggleConditionStunned()">
-                                    <img class="condition-icon" src="img/Condition Icons/Stunned.png" alt="Stunned-icon">
-                                    <div class="condition-text">Stunned</div>
-                                </div>
-                    <!--Unconcious-->
-                                <div class="condition-icon-container" id="condition-icon-container-Unconcious" onclick="toggleConditionUnconcious()">
-                                    <img class="condition-icon" src="img/Condition Icons/Unconcious.png" alt="Unconcious-icon">
-                                    <div class="condition-text">Unconcious</div>
-                                </div>
+            <div class="condition-bar">
+<!--Advantage-->
+                <div class="condition-icon-container" id="condition-icon-container-Advantage" onclick="toggleConditionAdvantage()">
+                    <img class="condition-icon" src="img/Condition Icons/Advantage.png" alt="Advantage-icon">
+                    <div class="condition-text">Adv</div>
             </div>
+<!--DisAdvantage-->
+            <div class="condition-icon-container" id="condition-icon-container-DisAdvantage" onclick="toggleConditionDisAdvantage()">
+                <img class="condition-icon" src="img/Condition Icons/Disadvantage.png" alt="DisAdvantage-icon">
+                <div class="condition-text">DisAdv</div>
             </div>
+<!--Charmed-->
+            <div class="condition-icon-container" id="condition-icon-container-Charmed" onclick="toggleConditionCharmed()">
+                <img class="condition-icon" src="img/Condition Icons/Charmed.png" alt="Charmed-icon">
+                <div class="condition-text">Charmed</div>
+            </div>
+<!--Dodge Action-->
+            <div class="condition-icon-container" id="condition-icon-container-Dodged" onclick="toggleConditionDodged()">
+                <img class="condition-icon" src="img/Condition Icons/Dodge Action.png" alt="Dodged-icon">
+                <div class="condition-text">Dodge</div>
+            </div>
+<!--Exhausted-->
+            <div class="condition-icon-container" id="condition-icon-container-Exhausted" onclick="toggleConditionExhausted()">
+                <img class="condition-icon" src="img/Condition Icons/Exhausted.png" alt="Exhausted-icon">
+                <div class="condition-text">Exhausted</div>
+            </div>
+<!--Frightened-->
+            <div class="condition-icon-container" id="condition-icon-container-Frightened" onclick="toggleConditionFrightened()">
+                <img class="condition-icon" src="img/Condition Icons/Frightened.png" alt="Frightened-icon">
+                <div class="condition-text">Frightened</div>
+            </div>
+<!--Grappled-->
+            <div class="condition-icon-container" id="condition-icon-container-Grappled" onclick="toggleConditionGrappled()">
+                <img class="condition-icon" src="img/Condition Icons/Grappled.png" alt="Grappled-icon">
+                <div class="condition-text">Grappled</div>
+            </div>
+<!--Holding Action-->
+            <div class="condition-icon-container" id="condition-icon-container-HoldingAction" onclick="toggleConditionHoldingAction()">
+                <img class="condition-icon" src="img/Condition Icons/Holding Action.png" alt="HoldingAction-icon">
+                <div class="condition-text">Action</div>
+            </div>
+<!--Inspired-->
+            <div class="condition-icon-container" id="condition-icon-container-Inspired" onclick="toggleConditionInspired()">
+                <img class="condition-icon" src="img/Condition Icons/Inspired.png" alt="Inspired-icon">
+                <div class="condition-text">Inspired</div>
+            </div>
+<!--Prone-->
+            <div class="condition-icon-container" id="condition-icon-container-Prone" onclick="toggleConditionProne()">
+                <img class="condition-icon" src="img/Condition Icons/Prone.png" alt="Prone-icon">
+                <div class="condition-text">Prone</div>
+            </div>
+<!--Reaction Used-->
+            <div class="condition-icon-container" id="condition-icon-container-ReactionUsed" onclick="toggleConditionReactionUsed()">
+                <img class="condition-icon" src="img/Condition Icons/Reaction Used.png" alt="ReactionUsed-icon">
+                <div class="condition-text">Reaction</div>
+            </div>
+<!--Poisoned-->
+            <div class="condition-icon-container" id="condition-icon-container-Poisoned" onclick="toggleConditionPoisoned()">
+                <img class="condition-icon" src="img/Condition Icons/Poisoned.png" alt="Poisoned-icon">
+                <div class="condition-text">Poisoned</div>
+            </div>
+<!--Stunned-->
+            <div class="condition-icon-container" id="condition-icon-container-Stunned" onclick="toggleConditionStunned()">
+                <img class="condition-icon" src="img/Condition Icons/Stunned.png" alt="Stunned-icon">
+                <div class="condition-text">Stunned</div>
+            </div>
+<!--Unconcious-->
+            <div class="condition-icon-container" id="condition-icon-container-Unconcious" onclick="toggleConditionUnconcious()">
+                <img class="condition-icon" src="img/Condition Icons/Unconcious.png" alt="Unconcious-icon">
+                <div class="condition-text">Unconcious</div>
+            </div>
+        </div>
           
 
 

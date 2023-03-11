@@ -5,8 +5,7 @@
 .condition-bar{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr
-    1fr 1fr 1fr 1fr 1fr 1fr 1fr;/*14 ikoner*/
-    
+    1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 .condition-icon-container{
     display: flex;
@@ -53,8 +52,6 @@
 }
 .condition-icon-wrapper{
     display: flex;
-    flex-direction: column;
-    position: relative;
     align-items: center;
     justify-content: center;
 }

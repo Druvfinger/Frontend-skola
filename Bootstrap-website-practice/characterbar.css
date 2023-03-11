@@ -1,14 +1,17 @@
 .character-bar-container{
     position: relative;
-    display: flex;
     margin-top: 80px;
+    display: flex;
+    border: 1px solid black ;
+    padding: 20px;
+    border-radius: 6px;
 }
 .character-bar{
     display: grid;
-    grid-template-columns: 60px 1fr;
+    grid-template-columns: 1fr;
     padding-right: 5px;
     align-items: center;
-    border: 2px solid yellow;
+    flex: 1;
 }
 .hp-input, .ac-input, .initiative-input, .name-input{
     display: flex;
@@ -33,7 +36,7 @@
 }
 .character-picture{
     width: 100%;
-    width: 60px;
+    width: 100px;
     border-radius: 50%;
 
 }
