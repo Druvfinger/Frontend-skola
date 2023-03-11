@@ -1,0 +1,56 @@
+.character-bar-container{
+    position: relative;
+    display: flex;
+    margin-top: 80px;
+}
+.character-bar{
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    padding-right: 5px;
+    align-items: center;
+    border: 2px solid yellow;
+}
+.hp-input, .ac-input, .initiative-input, .name-input{
+    display: flex;
+    min-height: 30px;
+    font-size: 16px;
+    padding-left: 6px;
+    flex:1;
+    
+}
+.name-input-container, .ac-input-container, 
+.hp-input-container, .initiative-input-container{
+    display: flex;
+    position: relative;
+    flex:1;
+}
+.name-input-container{
+    margin-left: 10px;
+}
+.character-picture-container{
+   position: relative;
+   display: flex;
+}
+.character-picture{
+    width: 100%;
+    width: 60px;
+    border-radius: 50%;
+
+}
+.label{
+position: absolute;
+top: -20px;
+font-size: 18px;
+font-weight: bold;
+}
+.test{
+    border: 2px solid burlywood;
+}
+.input-boxes{
+display: flex;    
+}
+
+
+
+
+

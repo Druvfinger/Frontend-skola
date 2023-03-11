@@ -1,0 +1,11 @@
+.name-input{
+    min-height: 30px;
+    font-size: 16px;
+    padding-left: 6px;
+    flex:1;
+}
+.name-input-container{
+    margin-left: 10px;
+    display: flex;
+    flex: 1;
+}
