@@ -1,8 +1,44 @@
+.header{
+    
+    height: 90px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    background-image: url(img/background4.jpg);
+}
+.left-section{
+    display: flex;
+    border: 2px solid purple;
+    margin: 5px;
+}
+.middle-section{
+    display: flex;
+    border: 2px solid greenyellow;
+    margin: 5px;
+}
+.title{
+    display: flex;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 32px;
+}
+
+.right-section{
+    display: flex;
+    border: 2px solid orange;
+    margin: 5px;
+}
+
 .big-box{/*character-bar-container*/
     border: 2px solid black;
     height: 300px;
     display: flex;
     position: relative;
+    margin-top: 120px;
 }
 .p-box{/*character-picture-container*/
     border: 2px solid green;
@@ -26,5 +62,4 @@
 .icon-box{ /*condition bar*/
     margin: 10px;
     border: 2px solid red;
-
 }

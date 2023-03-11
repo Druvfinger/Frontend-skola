@@ -5,7 +5,8 @@
 .condition-bar{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr
-    1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding-left: 8px;
 }
 .condition-icon-container{
     display: flex;
@@ -49,9 +50,4 @@
     font-size: 12px;
     position: absolute;
     bottom: -15px;
-}
-.condition-icon-wrapper{
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }

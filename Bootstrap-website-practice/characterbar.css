@@ -2,14 +2,16 @@
     position: relative;
     margin-top: 80px;
     display: flex;
-    border: 1px solid black ;
-    padding: 20px;
-    border-radius: 6px;
+    border: 3px solid black ;
+    padding-top: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    border-radius: 4px;
 }
 .character-bar{
     display: grid;
     grid-template-columns: 1fr;
-    padding-right: 5px;
     align-items: center;
     flex: 1;
 }
@@ -19,13 +21,13 @@
     font-size: 16px;
     padding-left: 6px;
     flex:1;
-    
 }
 .name-input-container, .ac-input-container, 
 .hp-input-container, .initiative-input-container{
     display: flex;
     position: relative;
     flex:1;
+    justify-content: center;
 }
 .name-input-container{
     margin-left: 10px;
@@ -37,20 +39,17 @@
 .character-picture{
     width: 100%;
     width: 100px;
-    border-radius: 50%;
-
+    border-radius: 8px;
+    border: 1px solid black;
 }
 .label{
 position: absolute;
-top: -20px;
+top: -24px;
 font-size: 18px;
-font-weight: bold;
-}
-.test{
-    border: 2px solid burlywood;
+display: flex;
 }
 .input-boxes{
-display: flex;    
+    display: flex;    
 }
 
 
