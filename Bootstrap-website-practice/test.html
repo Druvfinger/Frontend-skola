@@ -21,7 +21,7 @@
     RIGHT
 </div>
 </header>
-
+<!--
     <div class="big-box">
         <div class="p-box"></div>
         <div class="name-icon-box">
@@ -30,16 +30,44 @@
         </div>
         </div>
     </div>
+    -->
 
-    <div class="big-box">
-        <div class="p-box"></div>
-        <div class="name-icon-box">
-            <div class="name-box"></div>
-            <div class="icon-box"></div>
+    <i class="arrow down"></i>
+
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+        <div id="myDropdown" class="dropdown-content">
+          <div class="popout-container">
+            <!--Ancenstral Protectors-->
+                <div class="condition-icon-container">
+                    <img class="condition-icon" src="img/Condition Icons/Ancenstral Protectors.png" alt="Ancenstral Protectors-icon">
+                    <div class="condition-text">Ancenstral Protectors</div>
+                </div>
+                
         </div>
-        </div>
-    </div>
+      </div> 
 
 
+
+
+ <script>
+    function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+} 
+ </script>
 </body>
 </html>

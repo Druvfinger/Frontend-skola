@@ -51,6 +51,11 @@ display: flex;
 .input-boxes{
     display: flex;    
 }
+.popout-container{
+    border: 2px solid greenyellow;
+    display: flex;
+    position: relative;
+}
 
 
 
