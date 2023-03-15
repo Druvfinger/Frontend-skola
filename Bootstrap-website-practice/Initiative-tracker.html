@@ -19,7 +19,6 @@ THIS IS THE HEADER
 <!--character-bar-->
     <div class="character-bar-container">
         <div class="character-picture-container">
-            
             <img class="character-picture" src="img/Thelkan Mardiki.webp" alt="character-picture">
         </div> 
         <div class="character-bar">
@@ -45,449 +44,351 @@ THIS IS THE HEADER
             </div>
             <div class="condition-bar">
 <!--Advantage-->
-                <div class="condition-icon-container" id="condition-icon-container-Advantage" onclick="toggleConditionAdvantage()">
+            <div class="condition-icon-container" onclick="selected(event, this)">
                     <img class="condition-icon" src="img/Condition Icons/Advantage.png" alt="Advantage-icon">
                     <div class="condition-text">Adv</div>
             </div>
 <!--DisAdvantage-->
-            <div class="condition-icon-container" id="condition-icon-container-DisAdvantage" onclick="toggleConditionDisAdvantage()">
+            <div class="condition-icon-container" onclick="selected(event, this)">
                 <img class="condition-icon" src="img/Condition Icons/Disadvantage.png" alt="DisAdvantage-icon">
                 <div class="condition-text">DisAdv</div>
             </div>
 <!--Charmed-->
-            <div class="condition-icon-container" id="condition-icon-container-Charmed" onclick="toggleConditionCharmed()">
+            <div class="condition-icon-container" onclick="selected(event, this)">
                 <img class="condition-icon" src="img/Condition Icons/Charmed.png" alt="Charmed-icon">
                 <div class="condition-text">Charmed</div>
             </div>
 <!--Dodge Action-->
-            <div class="condition-icon-container" id="condition-icon-container-Dodged" onclick="toggleConditionDodged()">
+            <div class="condition-icon-container" onclick="selected(event, this)">
                 <img class="condition-icon" src="img/Condition Icons/Dodge Action.png" alt="Dodged-icon">
                 <div class="condition-text">Dodge</div>
             </div>
 <!--Exhausted-->
-            <div class="condition-icon-container" id="condition-icon-container-Exhausted" onclick="toggleConditionExhausted()">
+            <div class="condition-icon-container" onclick="selected(event, this)">
                 <img class="condition-icon" src="img/Condition Icons/Exhausted.png" alt="Exhausted-icon">
                 <div class="condition-text">Exhausted</div>
             </div>
 <!--Frightened-->
-            <div class="condition-icon-container" id="condition-icon-container-Frightened" onclick="toggleConditionFrightened()">
+            <div class="condition-icon-container" onclick="selected(event, this)">
                 <img class="condition-icon" src="img/Condition Icons/Frightened.png" alt="Frightened-icon">
                 <div class="condition-text">Frightened</div>
             </div>
 <!--Grappled-->
-            <div class="condition-icon-container" id="condition-icon-container-Grappled" onclick="toggleConditionGrappled()">
+            <div class="condition-icon-container" onclick="selected(event,this)">
                 <img class="condition-icon" src="img/Condition Icons/Grappled.png" alt="Grappled-icon">
                 <div class="condition-text">Grappled</div>
             </div>
 <!--Holding Action-->
-            <div class="condition-icon-container" id="condition-icon-container-HoldingAction" onclick="toggleConditionHoldingAction()">
+            <div class="condition-icon-container" onclick="selected(event,this)">
                 <img class="condition-icon" src="img/Condition Icons/Holding Action.png" alt="HoldingAction-icon">
                 <div class="condition-text">Action</div>
             </div>
 <!--Inspired-->
-            <div class="condition-icon-container" id="condition-icon-container-Inspired" onclick="toggleConditionInspired()">
+            <div class="condition-icon-container" onclick="selected(event,this)">
                 <img class="condition-icon" src="img/Condition Icons/Inspired.png" alt="Inspired-icon">
                 <div class="condition-text">Inspired</div>
             </div>
 <!--Prone-->
-            <div class="condition-icon-container" id="condition-icon-container-Prone" onclick="toggleConditionProne()">
+            <div class="condition-icon-container" onclick="selected(event,this)">
                 <img class="condition-icon" src="img/Condition Icons/Prone.png" alt="Prone-icon">
                 <div class="condition-text">Prone</div>
             </div>
 <!--Reaction Used-->
-            <div class="condition-icon-container" id="condition-icon-container-ReactionUsed" onclick="toggleConditionReactionUsed()">
+            <div class="condition-icon-container" onclick="selected(event,this)">
                 <img class="condition-icon" src="img/Condition Icons/Reaction Used.png" alt="ReactionUsed-icon">
                 <div class="condition-text">Reaction</div>
             </div>
 <!--Poisoned-->
-            <div class="condition-icon-container" id="condition-icon-container-Poisoned" onclick="toggleConditionPoisoned()">
+            <div class="condition-icon-container" onclick="selected(event,this)">
                 <img class="condition-icon" src="img/Condition Icons/Poisoned.png" alt="Poisoned-icon">
                 <div class="condition-text">Poisoned</div>
             </div>
 <!--Stunned-->
-            <div class="condition-icon-container" id="condition-icon-container-Stunned" onclick="toggleConditionStunned()">
+            <div class="condition-icon-container" onclick="selected(event,this)">
                 <img class="condition-icon" src="img/Condition Icons/Stunned.png" alt="Stunned-icon">
                 <div class="condition-text">Stunned</div>
             </div>
 <!--Unconcious-->
-            <div class="condition-icon-container" id="condition-icon-container-Unconcious" onclick="toggleConditionUnconcious()">
+            <div class="condition-icon-container" onclick="selected(event,this)">
                 <img class="condition-icon" src="img/Condition Icons/Unconcious.png" alt="Unconcious-icon">
                 <div class="condition-text">Unconcious</div>
             </div>
+            
 <!--POPOUT UNFINISHED-->
-            <div class="condition-icon-container-extender" id="condition-icon-container-extender" onclick="toggleConditionPopout()">
-                <i class="arrow down"></i>
+            <div class="condition-icon-container" onclick="clearConditions()" id="clear">
+                <div class="condition-icon-clearer" >Clear</div>
+                <div class="condition-text">Clear all Conditions</div>
+            </div>
+            <div class="condition-icon-container" onclick="expandConditionbar()">
+                <div class="condition-icon-container-extender" >
+                    <i class="arrow down"></i>
+                </div>
+                <div class="condition-text">Expand Menu</div>
             </div>
         </div>
+        <div class="popout-container">
+            <!--Ancenstral Protectors-->
+                <div class="condition-icon-container" onclick="selected(event,this)">
+                    <img class="condition-icon" src="img/Condition Icons/Ancenstral Protectors.png" alt="Ancenstral Protectors-icon">
+                    <div class="condition-text">Ancenstral Protectors</div>
+                </div>
+            <!--Armor of Agathys-->
+                <div class="condition-icon-container" onclick="selected(event,this)">
+                    <img class="condition-icon" src="img/Condition Icons/Armor of Agathys.png" alt="Armor-of-Agathys-icon">
+                    <div class="condition-text">Armor of Agathys</div>
+                </div>
+            <!--Baned-->
+                <div class="condition-icon-container" onclick="selected(event,this)">
+                    <img class="condition-icon" src="img/Condition Icons/Baned.png" alt="Baned-icon">
+                    <div class="condition-text">Bane</div>
+                </div>
+            <!-- Bear's Endurance -->
+                <div class="condition-icon-container" onclick="selected(event,this)">
+                    <img class="condition-icon" src="img/Condition Icons/Bear's Endurance.png" alt="Bear's Endurance-icon">
+                    <div class="condition-text">Bear's Endurance</div>
+                </div>
+            <!-- Bleeding Out -->
+                <div class="condition-icon-container" onclick="selected(event,this)">
+                    <img class="condition-icon" src="img/Condition Icons/Bleeding Out.png" alt="Bleeding Out-icon">
+                    <div class="condition-text">Bleeding Out</div>
+                </div>
+            <!-- Blessed -->
+                <div class="condition-icon-container" onclick="selected(event,this)">
+                    <img class="condition-icon" src="img/Condition Icons/Blessed.png" alt="Blessed-icon">
+                    <div class="condition-text">Blessed</div>
+                </div>
+            <!-- Blinded -->
+                <div class="condition-icon-container" onclick="selected(event,this)">
+                    <img class="condition-icon" src="img/Condition Icons/Blinded.png" alt="Blinded-icon">
+                    <div class="condition-text">Blinded</div>
+                </div>
+            <!-- Blink -->
+                <div class="condition-icon-container" onclick="selected(event,this)">
+                    <img class="condition-icon" src="img/Condition Icons/Blink.png" alt="Blink-icon">
+                    <div class="condition-text">Blink</div>
+                </div>
+            <!-- Blur -->
+                <div class="condition-icon-container" onclick="selected(event,this)">
+                    <img class="condition-icon" src="img/Condition Icons/Blur.png" alt="Blur-icon">
+                    <div class="condition-text">Blur</div>
+                </div>
+            <!-- Bull's Strength -->
+                <div class="condition-icon-container" onclick="selected(event,this)">
+                    <img class="condition-icon" src="img/Condition Icons/Bull's Strength.png" alt="Bull's Strength-icon">
+                    <div class="condition-text">Bull's Strength</div>
+                </div>
+            <!-- Cat's Grace -->
+                <div class="condition-icon-container" onclick="selected(event,this)">
+                    <img class="condition-icon" src="img/Condition Icons/Cat's Grace.png" alt="Cat's Grace-icon">
+                    <div class="condition-text">Cat's Grace</div>
+                </div>
+            <!-- Cause of Fear -->
+                <div class="condition-icon-container" onclick="selected(event,this)">
+                    <img class="condition-icon" src="img/Condition Icons/Cause of Fear.png" alt="Cause of Fear-icon">
+                    <div class="condition-text">Cause of Fear</div>
+                </div>
+            <!-- Compelled Duel -->
+                <div class="condition-icon-container" onclick="selected(event,this)">
+                    <img class="condition-icon" src="img/Condition Icons/Compelled Duel.png" alt="Compelled Duel-icon">
+                    <div class="condition-text">Compelled Duel</div>
+                </div>
+            <!-- Concentration -->
+                <div class="condition-icon-container" onclick="selected(event,this)">
+                    <img class="condition-icon" src="img/Condition Icons/Concentration.png" alt="Concentration-icon">
+                    <div class="condition-text">Concentration</div>
+                </div>
+            <!-- Confused -->
+                <div class="condition-icon-container" onclick="selected(event,this)">
+                    <img class="condition-icon" src="img/Condition Icons/Confused.png" alt="Confused-icon">
+                    <div class="condition-text">Confused</div>
+                </div>
+            <!-- Deafened -->
+                <div class="condition-icon-container" onclick="selected(event,this)">
+                    <img class="condition-icon" src="img/Condition Icons/Deafened.png" alt="Deafened-icon">
+                    <div class="condition-text">Deafened</div>
+                </div>
+            <!-- Divine Favor -->
+                <div class="condition-icon-container" onclick="selected(event,this)">
+                    <img class="condition-icon" src="img/Condition Icons/Divine Favor.png" alt="Divine Favor-icon">
+                    <div class="condition-text">Divine Favor</div>
+                </div>
+            <!-- Eagle's Splendor -->
+                <div class="condition-icon-container" onclick="selected(event,this)">
+                    <img class="condition-icon" src="img/Condition Icons/Eagle's Splendor.png" alt="Eagle's Splendor-icon">
+                    <div class="condition-text">Eagle's Splendor</div>
+                </div>
+            <!-- Entangled -->
+                <div class="condition-icon-container" onclick="selected(event,this)">
+                    <img class="condition-icon" src="img/Condition Icons/Entangled.png" alt="Entangled-icon">
+                    <div class="condition-text">Entangled</div>
+                </div>
+            <!-- Flying -->
+                <div class="condition-icon-container" onclick="selected(event,this)"> 
+                    <img class="condition-icon" src="img/Condition Icons/Flying.png" alt="Flying-icon">
+                    <div class="condition-text">Flying</div>
+                </div>
+            <!-- Fox's Cunning -->
+                <div class="condition-icon-container" onclick="selected(event,this)">
+                    <img class="condition-icon" src="img/Condition Icons/Fox's Cunning.png" alt="Fox's Cunning-icon">
+                    <div class="condition-text">Fox's Cunning</div>
+                </div>
+            <!-- Hasted -->
+                <div class="condition-icon-container" onclick="selected(event,this)">
+                    <img class="condition-icon" src="img/Condition Icons/Hasted.png" alt="Hasted-icon">
+                    <div class="condition-text">Hasted</div>
+                </div>
+            <!-- Hex -->
+                <div class="condition-icon-container" onclick="selected(event,this)">
+                    <img class="condition-icon" src="img/Condition Icons/Hex.png" alt="Hex-icon">
+                    <div class="condition-text">Hex</div>
+                </div>
+            <!-- Hexblade's Curse -->
+                <div class="condition-icon-container" onclick="selected(event,this)">
+                    <img class="condition-icon" src="img/Condition Icons/Hexblade's Curse.png" alt="Hexblade's Curse-icon">
+                    <div class="condition-text">Hexblade's Curse</div>
+                </div>
+            <!-- Highlighted -->
+                <div class="condition-icon-container" onclick="selected(event,this)">
+                    <img class="condition-icon" src="img/Condition Icons/Highlighted.png" alt="Highlighted-icon">
+                    <div class="condition-text">Highlighted</div>
+                </div>
+            <!-- Incapacitated -->
+                <div class="condition-icon-container" onclick="selected(event,this)">
+                    <img class="condition-icon" src="img/Condition Icons/Incapacitated.png" alt="Incapacitated-icon">
+                    <div class="condition-text">Incapacitated</div>
+                </div>
+            <!-- Insightful Fighting -->
+                <div class="condition-icon-container" onclick="selected(event,this)">
+                    <img class="condition-icon" src="img/Condition Icons/Insightful Fighting.png" alt="Insightful Fighting-icon">
+                    <div class="condition-text">Insightful Fighting</div>
+                </div>
+            <!-- Incapacitated -->
+                <div class="condition-icon-container" onclick="selected(event,this)">
+                    <img class="condition-icon" src="img/Condition Icons/Incapacitated.png" alt="Incapacitated-icon">
+                    <div class="condition-text">Incapacitated</div>
+                </div>
+            <!-- Invisible -->
+                <div class="condition-icon-container" onclick="selected(event,this)">
+                    <img class="condition-icon" src="img/Condition Icons/Invisible.png" alt="Invisible-icon">
+                    <div class="condition-text">Invisible</div>
+                </div>
+            <!-- Mage Armor -->
+                <div class="condition-icon-container" onclick="selected(event,this)">
+                    <img class="condition-icon" src="img/Condition Icons/Mage Armor.png" alt="Mage Armor-icon">
+                    <div class="condition-text">Mage Armor</div>
+                </div>
+            <!-- Mark -->
+                <div class="condition-icon-container" onclick="selected(event,this)">
+                    <img class="condition-icon" src="img/Condition Icons/Mark.png" alt="Mark-icon">
+                    <div class="condition-text">Mark</div>
+                </div>
+            <!-- Mirror Image -->
+                <div class="condition-icon-container" onclick="selected(event,this)">
+                    <img class="condition-icon" src="img/Condition Icons/Mirror Image.png" alt="Mirror Image-icon">
+                    <div class="condition-text">Mirror Image</div>
+                </div>
+            <!-- On Fire -->
+                <div class="condition-icon-container" onclick="selected(event,this)">
+                    <img class="condition-icon" src="img/Condition Icons/On Fire.png" alt="On Fire-icon">
+                    <div class="condition-text">On Fire</div>
+                </div>
+            <!-- Owl's Wisdom -->
+                <div class="condition-icon-container" onclick="selected(event,this)">
+                    <img class="condition-icon" src="img/Condition Icons/Owl's Wisdom.png" alt="Owl's Wisdom-icon">
+                    <div class="condition-text">Owl's Wisdom</div>
+                </div>
+            <!-- Paralyzed -->
+                <div class="condition-icon-container" onclick="selected(event,this)">
+                    <img class="condition-icon" src="img/Condition Icons/Paralyzed.png" alt="Paralyzed-icon">
+                    <div class="condition-text">Paralyzed</div>
+                </div>
+            <!-- Petrified -->
+                <div class="condition-icon-container" onclick="selected(event,this)">
+                    <img class="condition-icon" src="img/Condition Icons/Petrified.png" alt="Petrified-icon">
+                    <div class="condition-text">Petrified</div>
+                </div>
+            <!-- Possessed -->
+                <div class="condition-icon-container" onclick="selected(event,this)">
+                    <img class="condition-icon" src="img/Condition Icons/Possessed.png" alt="Possessed-icon">
+                    <div class="condition-text">Possessed</div>
+                </div>
+            <!-- Raging -->
+                <div class="condition-icon-container" onclick="selected(event,this)">
+                    <img class="condition-icon" src="img/Condition Icons/Raging.png" alt="Raging-icon">
+                    <div class="condition-text">Raging</div>
+                </div>
+            <!-- Restrained -->
+                <div class="condition-icon-container" onclick="selected(event,this)">
+                    <img class="condition-icon" src="img/Condition Icons/Restrained.png" alt="Restrained-icon">
+                    <div class="condition-text">Restrained</div>
+                </div>
+            <!-- Sanctuary -->
+                <div class="condition-icon-container" onclick="selected(event,this)">
+                    <img class="condition-icon" src="img/Condition Icons/Sanctuary.png" alt="Sanctuary-icon">
+                    <div class="condition-text">Sanctuary</div>
+                </div>
+            <!-- Shell Defense -->
+                <div class="condition-icon-container" onclick="selected(event,this)">
+                    <img class="condition-icon" src="img/Condition Icons/Shell Defense.png" alt="Shell Defense-icon">
+                    <div class="condition-text">Shell Defense</div>
+                </div>
+            <!-- Shield of Faith -->
+                <div class="condition-icon-container" onclick="selected(event,this)">
+                    <img class="condition-icon" src="img/Condition Icons/Shield of Faith.png" alt="Shield of Faith-icon">
+                    <div class="condition-text">Shield of Faith</div>
+                </div>
+            <!-- Shifted -->
+                <div class="condition-icon-container" onclick="selected(event,this)">
+                    <img class="condition-icon" src="img/Condition Icons/Shifted.png" alt="Shifted-icon">
+                    <div class="condition-text">Shifted</div>
+                </div>
+            <!-- Slayer's Prey -->
+                <div class="condition-icon-container" onclick="selected(event,this)">
+                    <img class="condition-icon" src="img/Condition Icons/Slayer's Prey.png" alt="Slayer's Prey-icon">
+                    <div class="condition-text">Slayer's Prey</div>
+                </div>
+            <!-- Spirit Guardians -->
+                <div class="condition-icon-container" onclick="selected(event,this)">
+                    <img class="condition-icon" src="img/Condition Icons/Spirit Guardians.png" alt="Spirit Guardians-icon">
+                    <div class="condition-text">Spirit Guardians</div>
+                </div>
+            <!-- Stabilized -->
+                <div class="condition-icon-container" onclick="selected(event,this)">
+                    <img class="condition-icon" src="img/Condition Icons/Stabilized.png" alt="Stabilized-icon">
+                    <div class="condition-text">Stabilized</div>
+                    
+                </div>
+            <!-- Summoning -->
+                <div class="condition-icon-container" onclick="selected(event,this)">
+                    <img class="condition-icon" src="img/Condition Icons/Summoning.png" alt="Summoning-icon">
+                    <div class="condition-text">Summoning</div>
+                </div>
+            <!-- Symbiotic Entity -->
+                <div class="condition-icon-container" onclick="selected(event,this)">
+                    <img class="condition-icon" src="img/Condition Icons/Symbiotic Entity.png" alt="Symbiotic Entity-icon">
+                    <div class="condition-text">Symbiotic Entity</div>
+                </div>
+            <!-- Truesight -->
+                <div class="condition-icon-container" onclick="selected(event,this)">
+                    <img class="condition-icon" src="img/Condition Icons/Truesight.png" alt="Truesight-icon">
+                    <div class="condition-text">Truesight</div>
+                </div>
+            <!-- Warding Bond -->
+                <div class="condition-icon-container" onclick="selected(event,this)">
+                    <img class="condition-icon" src="img/Condition Icons/Warding Bond.png" alt="Warding Bond-icon">
+                    <div class="condition-text">Warding Bond</div>
+                </div>
+            </div>
     </div>
 </div>
     
 <!--************************************************************-->  
 
-<div class="popout-container">
-    <!--Ancenstral Protectors-->
-        <div class="condition-icon-container">
-            <img class="condition-icon" src="img/Condition Icons/Ancenstral Protectors.png" alt="Ancenstral Protectors-icon">
-            <div class="condition-text">Ancenstral Protectors</div>
-        </div>
-    <!--Armor of Agathys-->
-        <div class="condition-icon-container">
-            <img class="condition-icon" src="img/Condition Icons/Armor of Agathys.png" alt="Armor of Agathys-icon">
-            <div class="condition-text">Armor of Agathys</div>
-        </div>
-    <!--Baned-->
-        <div class="condition-icon-container">
-            <img class="condition-icon" src="img/Condition Icons/Baned.png" alt="Baned-icon">
-            <div class="condition-text">Bane</div>
-        </div>
-    <!-- Bear's Endurance -->
-        <div class="condition-icon-container">
-            <img class="condition-icon" src="img/Condition Icons/Bear's Endurance.png" alt="Bear's Endurance-icon">
-            <div class="condition-text">Bear's Endurance</div>
-        </div>
-    <!-- Bleeding Out -->
-        <div class="condition-icon-container">
-            <img class="condition-icon" src="img/Condition Icons/Bleeding Out.png" alt="Bleeding Out-icon">
-            <div class="condition-text">Bleeding Out</div>
-        </div>
-    <!-- Blessed -->
-        <div class="condition-icon-container">
-            <img class="condition-icon" src="img/Condition Icons/Blessed.png" alt="Blessed-icon">
-            <div class="condition-text">Blessed</div>
-        </div>
-    <!-- Blinded -->
-        <div class="condition-icon-container">
-            <img class="condition-icon" src="img/Condition Icons/Blinded.png" alt="Blinded-icon">
-            <div class="condition-text">Blinded</div>
-        </div>
-    <!-- Blink -->
-        <div class="condition-icon-container">
-            <img class="condition-icon" src="img/Condition Icons/Blink.png" alt="Blink-icon">
-            <div class="condition-text">Blink</div>
-        </div>
-    <!-- Blur -->
-        <div class="condition-icon-container">
-            <img class="condition-icon" src="img/Condition Icons/Blur.png" alt="Blur-icon">
-            <div class="condition-text">Blur</div>
-        </div>
-    <!-- Bull's Strength -->
-        <div class="condition-icon-container">
-            <img class="condition-icon" src="img/Condition Icons/Bull's Strength.png" alt="Bull's Strength-icon">
-            <div class="condition-text">Bull's Strength</div>
-        </div>
-    <!-- Cat's Grace -->
-        <div class="condition-icon-container">
-            <img class="condition-icon" src="img/Condition Icons/Cat's Grace.png" alt="Cat's Grace-icon">
-            <div class="condition-text">Cat's Grace</div>
-        </div>
-    <!-- Cause of Fear -->
-        <div class="condition-icon-container">
-            <img class="condition-icon" src="img/Condition Icons/Cause of Fear.png" alt="Cause of Fear-icon">
-            <div class="condition-text">Cause of Fear</div>
-        </div>
-    <!-- Compelled Duel -->
-        <div class="condition-icon-container">
-            <img class="condition-icon" src="img/Condition Icons/Compelled Duel.png" alt="Compelled Duel-icon">
-            <div class="condition-text">Compelled Duel</div>
-        </div>
-    <!-- Concentration -->
-        <div class="condition-icon-container">
-            <img class="condition-icon" src="img/Condition Icons/Concentration.png" alt="Concentration-icon">
-            <div class="condition-text">Concentration</div>
-        </div>
-    <!-- Confused -->
-        <div class="condition-icon-container">
-            <img class="condition-icon" src="img/Condition Icons/Confused.png" alt="Confused-icon">
-            <div class="condition-text">Confused</div>
-        </div>
-    <!-- Deafened -->
-        <div class="condition-icon-container">
-            <img class="condition-icon" src="img/Condition Icons/Deafened.png" alt="Deafened-icon">
-            <div class="condition-text">Deafened</div>
-        </div>
-    <!-- Divine Favor -->
-        <div class="condition-icon-container">
-            <img class="condition-icon" src="img/Condition Icons/Divine Favor.png" alt="Divine Favor-icon">
-            <div class="condition-text">Divine Favor</div>
-        </div>
-    <!-- Eagle's Splendor -->
-        <div class="condition-icon-container">
-            <img class="condition-icon" src="img/Condition Icons/Eagle's Splendor.png" alt="Eagle's Splendor-icon">
-            <div class="condition-text">Eagle's Splendor</div>
-        </div>
-    <!-- Entangled -->
-        <div class="condition-icon-container">
-            <img class="condition-icon" src="img/Condition Icons/Entangled.png" alt="Entangled-icon">
-            <div class="condition-text">Entangled</div>
-        </div>
-    <!-- Flying -->
-        <div class="condition-icon-container">
-            <img class="condition-icon" src="img/Condition Icons/Flying.png" alt="Flying-icon">
-            <div class="condition-text">Flying</div>
-        </div>
-    <!-- Fox's Cunning -->
-        <div class="condition-icon-container">
-            <img class="condition-icon" src="img/Condition Icons/Fox's Cunning.png" alt="Fox's Cunning-icon">
-            <div class="condition-text">Fox's Cunning</div>
-        </div>
-    <!-- Hasted -->
-        <div class="condition-icon-container">
-            <img class="condition-icon" src="img/Condition Icons/Hasted.png" alt="Hasted-icon">
-            <div class="condition-text">Hasted</div>
-        </div>
-    <!-- Hex -->
-        <div class="condition-icon-container">
-            <img class="condition-icon" src="img/Condition Icons/Hex.png" alt="Hex-icon">
-            <div class="condition-text">Hex</div>
-        </div>
-    <!-- Hexblade's Curse -->
-        <div class="condition-icon-container">
-            <img class="condition-icon" src="img/Condition Icons/Hexblade's Curse.png" alt="Hexblade's Curse-icon">
-            <div class="condition-text">Hexblade's Curse</div>
-        </div>
-    <!-- Highlighted -->
-        <div class="condition-icon-container">
-            <img class="condition-icon" src="img/Condition Icons/Highlighted.png" alt="Highlighted-icon">
-            <div class="condition-text">Highlighted</div>
-        </div>
-    <!-- Incapacitated -->
-        <div class="condition-icon-container">
-            <img class="condition-icon" src="img/Condition Icons/Incapacitated.png" alt="Incapacitated-icon">
-            <div class="condition-text">Incapacitated</div>
-        </div>
-    <!-- Insightful Fighting -->
-        <div class="condition-icon-container">
-            <img class="condition-icon" src="img/Condition Icons/Insightful Fighting.png" alt="Insightful Fighting-icon">
-            <div class="condition-text">Insightful Fighting</div>
-        </div>
-    <!-- Incapacitated -->
-        <div class="condition-icon-container">
-            <img class="condition-icon" src="img/Condition Icons/Incapacitated.png" alt="Incapacitated-icon">
-            <div class="condition-text">Incapacitated</div>
-        </div>
-    <!-- Invisible -->
-        <div class="condition-icon-container">
-            <img class="condition-icon" src="img/Condition Icons/Invisible.png" alt="Invisible-icon">
-            <div class="condition-text">Invisible</div>
-        </div>
-    <!-- Mage Armor -->
-        <div class="condition-icon-container">
-            <img class="condition-icon" src="img/Condition Icons/Mage Armor.png" alt="Mage Armor-icon">
-            <div class="condition-text">Mage Armor</div>
-        </div>
-    <!-- Mark -->
-        <div class="condition-icon-container">
-            <img class="condition-icon" src="img/Condition Icons/Mark.png" alt="Mark-icon">
-            <div class="condition-text">Mark</div>
-        </div>
-    <!-- Mirror Image -->
-        <div class="condition-icon-container">
-            <img class="condition-icon" src="img/Condition Icons/Mirror Image.png" alt="Mirror Image-icon">
-            <div class="condition-text">Mirror Image</div>
-        </div>
-    <!-- On Fire -->
-        <div class="condition-icon-container">
-            <img class="condition-icon" src="img/Condition Icons/On Fire.png" alt="On Fire-icon">
-            <div class="condition-text">On Fire</div>
-        </div>
-    <!-- Owl's Wisdom -->
-        <div class="condition-icon-container">
-            <img class="condition-icon" src="img/Condition Icons/Owl's Wisdom.png" alt="Owl's Wisdom-icon">
-            <div class="condition-text">Owl's Wisdom</div>
-        </div>
-    <!-- Paralyzed -->
-        <div class="condition-icon-container">
-            <img class="condition-icon" src="img/Condition Icons/Paralyzed.png" alt="Paralyzed-icon">
-            <div class="condition-text">Paralyzed</div>
-        </div>
-    <!-- Petrified -->
-        <div class="condition-icon-container">
-            <img class="condition-icon" src="img/Condition Icons/Petrified.png" alt="Petrified-icon">
-            <div class="condition-text">Petrified</div>
-        </div>
-    <!-- Possessed -->
-        <div class="condition-icon-container">
-            <img class="condition-icon" src="img/Condition Icons/Possessed.png" alt="Possessed-icon">
-            <div class="condition-text">Possessed</div>
-        </div>
-    <!-- Raging -->
-        <div class="condition-icon-container">
-            <img class="condition-icon" src="img/Condition Icons/Raging.png" alt="Raging-icon">
-            <div class="condition-text">Raging</div>
-        </div>
-    <!-- Restrained -->
-        <div class="condition-icon-container">
-            <img class="condition-icon" src="img/Condition Icons/Restrained.png" alt="Restrained-icon">
-            <div class="condition-text">Restrained</div>
-        </div>
-    <!-- Sanctuary -->
-        <div class="condition-icon-container">
-            <img class="condition-icon" src="img/Condition Icons/Sanctuary.png" alt="Sanctuary-icon">
-            <div class="condition-text">Sanctuary</div>
-        </div>
-    <!-- Shell Defense -->
-        <div class="condition-icon-container">
-            <img class="condition-icon" src="img/Condition Icons/Shell Defense.png" alt="Shell Defense-icon">
-            <div class="condition-text">Shell Defense</div>
-        </div>
-    <!-- Shield of Faith -->
-        <div class="condition-icon-container">
-            <img class="condition-icon" src="img/Condition Icons/Shield of Faith.png" alt="Shield of Faith-icon">
-            <div class="condition-text">Shield of Faith</div>
-        </div>
-    <!-- Shifted -->
-        <div class="condition-icon-container">
-            <img class="condition-icon" src="img/Condition Icons/Shifted.png" alt="Shifted-icon">
-            <div class="condition-text">Shifted</div>
-        </div>
-    <!-- Slayer's Prey -->
-        <div class="condition-icon-container">
-            <img class="condition-icon" src="img/Condition Icons/Slayer's Prey.png" alt="Slayer's Prey-icon">
-            <div class="condition-text">Slayer's Prey</div>
-        </div>
-    <!-- Spirit Guardians -->
-        <div class="condition-icon-container">
-            <img class="condition-icon" src="img/Condition Icons/Spirit Guardians.png" alt="Spirit Guardians-icon">
-            <div class="condition-text">Spirit Guardians</div>
-        </div>
-    <!-- Stabilized -->
-        <div class="condition-icon-container">
-            <img class="condition-icon" src="img/Condition Icons/Stabilized.png" alt="Stabilized-icon">
-            <div class="condition-text">Stabilized</div>
-           
-        </div>
-    <!-- Summoning -->
-        <div class="condition-icon-container">
-            <img class="condition-icon" src="img/Condition Icons/Summoning.png" alt="Summoning-icon">
-            <div class="condition-text">Summoning</div>
-        </div>
-    <!-- Symbiotic Entity -->
-        <div class="condition-icon-container">
-            <img class="condition-icon" src="img/Condition Icons/Symbiotic Entity.png" alt="Symbiotic Entity-icon">
-            <div class="condition-text">Symbiotic Entity</div>
-        </div>
-    <!-- Truesight -->
-        <div class="condition-icon-container">
-            <img class="condition-icon" src="img/Condition Icons/Truesight.png" alt="Truesight-icon">
-            <div class="condition-text">Truesight</div>
-        </div>
-    <!-- Warding Bond -->
-        <div class="condition-icon-container">
-            <img class="condition-icon" src="img/Condition Icons/Warding Bond.png" alt="Warding Bond-icon">
-            <div class="condition-text">Warding Bond</div>
-        </div>
-    </div>
+
 
 <!--************************************************************-->  
 <!--We could add a link for each condition to a site that explains what they do-->
-<!--SCRIPTS-->
 
-<!--Popout UNFINISHED-->
-            <script>
-                function toggleConditionPopout() {
-                var element = document.getElementById("condition-icon-container-extender");
-                element.classList.toggle("popout");
-                }
-            </script>
-<!--Advantage-->
-            <script>
-                function toggleConditionAdvantage() {
-                var element = document.getElementById("condition-icon-container-Advantage");
-                element.classList.toggle("toggled-color");
-                }
-            </script>
-<!--DisAdvantage--> 
-            <script>
-                function toggleConditionDisAdvantage() {
-                    var element = document.getElementById("condition-icon-container-DisAdvantage");
-                    element.classList.toggle("toggled-color");
-                    }
-            </script>
-<!--Charmed-->
-            <script>
-                function toggleConditionCharmed() {
-                    var element = document.getElementById("condition-icon-container-Charmed");
-                    element.classList.toggle("toggled-color");
-                    }
-            </script>
-<!--Dodged-->
-            <script>
-                function toggleConditionDodged() {
-                    var element = document.getElementById("condition-icon-container-Dodged");
-                    element.classList.toggle("toggled-color");
-                    }
-            </script>
-<!--Exhausted-->
-            <script>
-                function toggleConditionExhausted() {
-                    var element = document.getElementById("condition-icon-container-Exhausted");
-                    element.classList.toggle("toggled-color");
-                    }
-            </script>
-<!--Frightened-->
-            <script>
-                function toggleConditionFrightened() {
-                    var element = document.getElementById("condition-icon-container-Frightened");
-                    element.classList.toggle("toggled-color");
-                    }
-            </script>
-<!--Grappled-->
-            <script>
-                function toggleConditionGrappled() {
-                    var element = document.getElementById("condition-icon-container-Grappled");
-                    element.classList.toggle("toggled-color");
-                    }
-            </script>
-<!--Holding Action-->
-            <script>
-                function toggleConditionHoldingAction() {
-                    var element = document.getElementById("condition-icon-container-HoldingAction");
-                    element.classList.toggle("toggled-color");
-                    }
-            </script>
-<!--Inspired-->
-            <script>
-                function toggleConditionInspired() {
-                    var element = document.getElementById("condition-icon-container-Inspired");
-                    element.classList.toggle("toggled-color");
-                    }
-            </script>
-<!--Prone-->
-            <script>
-                function toggleConditionProne() {
-                    var element = document.getElementById("condition-icon-container-Prone");
-                    element.classList.toggle("toggled-color");
-                    }
-            </script>
-<!--Reaction Used-->
-            <script>
-                function toggleConditionReactionUsed() {
-                    var element = document.getElementById("condition-icon-container-ReactionUsed");
-                    element.classList.toggle("toggled-color");
-                    }
-            </script>
-<!--Poisoned-->
-            <script>
-                function toggleConditionPoisoned() {
-                    var element = document.getElementById("condition-icon-container-Poisoned");
-                    element.classList.toggle("toggled-color");
-                    }
-            </script>
-<!--Stunned-->
-            <script>
-                function toggleConditionStunned() {
-                    var element = document.getElementById("condition-icon-container-Stunned");
-                    element.classList.toggle("toggled-color");
-                    }
-            </script>
-<!--Unconcious-->
-            <script>
-                function toggleConditionUnconcious() {
-                    var element = document.getElementById("condition-icon-container-Unconcious");
-                    element.classList.toggle("toggled-color");
-                    }
-            </script>
-
-        
+<script src="initative-tracker.js"></script>     
 </body>
 </html>

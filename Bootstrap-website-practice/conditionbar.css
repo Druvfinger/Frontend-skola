@@ -1,11 +1,13 @@
 .condition-icon{
     width: 100%;
     position: relative;
+
 }
 .condition-bar{
     display: grid;
+    position: relative;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr
-    1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     padding-left: 8px;
 }
 .condition-icon-container{
@@ -20,7 +22,7 @@
     margin: 2px;
     min-width: 30px;
 }
-.condition-icon-container .condition-text{
+.condition-icon-container .condition-text,.condition-icon-container1 .condition-text{
     position: absolute;
     background-color: gray;
     color: white;
@@ -43,9 +45,6 @@
 .condition-icon-container:hover{
     background-color: rgb(220, 53, 69);
 }
-.toggled-color{
-    background-color: rgb(220, 53, 69);
-}
 .condition-text{
     font-size: 12px;
     position: absolute;
@@ -59,26 +58,26 @@
 .arrow {
     border: solid black;
     border-width: 0 3px 3px 0;
-    display: inline-block;
     padding: 3px;
   }
-.condition-icon-container-extender{
-    display: flex;
-    position: relative;
-    border-radius: 6px;
-    padding: 2px;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    margin: 2px;
-    min-width: 30px;
-    background-color: red;/*REMOVE*/
-}
+
 .popout-container{
+    position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr
     1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     padding-left: 8px;
 }
+
+.condition-icon-clearer{
+    position: absolute;
+    display: flex;
+}
+.condition-icon-container-extender{
+    position: absolute;
+    display: flex;
+}
+
+
 
 

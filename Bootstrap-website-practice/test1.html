@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+      
+      
+      <div id="container">
+        <div onclick="swapDiv(event,this);">1</div>
+        <div onclick="swapDiv(event,this);">2</div>
+        <div onclick="swapDiv(event,this);">3</div>
+      </div>
+      <script>
+        function swapDiv(event, element) {
+          element.parentNode.insertBefore(element, element.parentNode.firstChild);
+        }
+      </script>
+</body>
+</html>

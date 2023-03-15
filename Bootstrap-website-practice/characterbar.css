@@ -35,6 +35,8 @@
 .character-picture-container{
    position: relative;
    display: flex;
+   max-height: 100px;
+   top: 
 }
 .character-picture{
     width: 100%;
@@ -51,11 +53,9 @@ display: flex;
 .input-boxes{
     display: flex;    
 }
-.popout-container{
-    border: 2px solid greenyellow;
-    display: flex;
-    position: relative;
-}
+
+
+
 
 
 
