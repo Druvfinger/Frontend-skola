@@ -20,10 +20,9 @@ function expandConditionbar(){
         item.style.display = "grid";
     }
 }
-function selected1(event, item){
-    let x = document.querySelector(".popout-container");
-    console.log(item.parentNode.parentNode);
-}
+
+
+
     /*
     if(item.parentNode === x){
         console.log("yes");

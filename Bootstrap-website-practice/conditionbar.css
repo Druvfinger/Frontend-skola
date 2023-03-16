@@ -6,9 +6,10 @@
 .condition-bar{
     display: grid;
     position: relative;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr
-    1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr
+    1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     padding-left: 8px;
+    margin-top: 5px;
 }
 .condition-icon-container{
     display: flex;
@@ -65,7 +66,7 @@
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr
-    1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     padding-left: 8px;
 }
 
