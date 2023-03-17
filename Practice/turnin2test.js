@@ -1,8 +1,8 @@
-fetch ('https://fakestoreapi.com/products')
-.then(res => {
+fetch ('https://fakestoreapi.com/products') // hämtar returnerar  respons
+.then(res => {  // konvertera response till en promise
     return res.json();
 })
-.then(data => {
+.then(data => {   // konvertat till array 
     data.forEach(product => {
         let description = product.description;
         let title = product.title;
@@ -14,7 +14,7 @@ fetch ('https://fakestoreapi.com/products')
             <div class="card-body">
             <h3 class="card-title">${product.title}</h3>
             <p class="card-text text-secondary ">${product.category}</p>
-            <p class="card-text">${product.description}</p>
+            <p class="card-text">${description.length > 20 ? description.substring(0, 20).concat('..more') : description}</p>
             <div class="row">
                 <div class="col">
                     <h4 class="card-text d-md-inline-block">${product.price}kr</h4>
@@ -30,7 +30,12 @@ fetch ('https://fakestoreapi.com/products')
     document.querySelector('#product-row').appendChild(productCol);
     })
 })
+function addLinkForMoreInfo(input){
+    let modInput = input.replace(" ","")
+    if(modInput.length > 20){
 
+    }
+}
 
 /*
 Maricas kod
