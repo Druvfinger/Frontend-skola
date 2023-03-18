@@ -5,20 +5,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="conditionbar.css">
+    <link rel="stylesheet" href="characterbar.css">
 </head>
 <body>
   
-      
-      
-      <div id="container">
-        <div onclick="swapDiv(event,this);">1</div>
-        <div onclick="swapDiv(event,this);">2</div>
-        <div onclick="swapDiv(event,this);">3</div>
-      </div>
-      <script>
-        function swapDiv(event, element) {
-          element.parentNode.insertBefore(element, element.parentNode.firstChild);
-        }
-      </script>
+  <div class="condition-bar">
+    <!--DisAdvantage FIX-->
+    <div
+      class="condition-icon-container" onclick="selected(event, this)">
+      <img class="condition-icon" src="img/Condition Icons/Disadvantage.png"/>
+      <div class="condition-text">DisAdvantage</div>
+    </div>
+        <!--Advantage FIX-->
+        <div class="condition-icon-container" onclick="swap(event, this)">
+          <img class="condition-icon" src="img/Condition Icons/Advantage.png" id="1"/>
+          <div class="condition-text">Advantage</div>
+        </div>
+    <!--Charmed-->
+    <div class="condition-icon-container" onclick="selected(event, this)">
+      <img
+        class="condition-icon"
+        src="img/Condition Icons/Charmed.png"
+      />
+      <div class="condition-text">Charmed</div>
+    </div>
+  </div>
+
+<hr>
+
+  <div class="popout-container">
+    <!--Advantage FIX-->
+    <div
+      class="condition-icon-container"
+      onclick="selected(event, this)"
+      id="advantage-icon-container"
+    >
+      <img
+        class="condition-icon"
+        src="img/Condition Icons/Advantage.png"
+        alt="Advantage-icon"
+        id="Advantage-icon"
+      />
+      <div class="condition-text">Adv</div>
+    </div>
+    <!--DisAdvantage FIX-->
+    <div
+      class="condition-icon-container"
+      onclick="selected(event, this)"
+      id="Disadvantage-icon-container"
+    >
+      <img
+        class="condition-icon"
+        src="img/Condition Icons/Disadvantage.png"
+        alt="DisAdvantage-icon"
+        id="DisAdvantage-icon"
+      />
+      <div class="condition-text">DisAdv</div>
+    </div>
+    <!--Charmed-->
+    <div class="condition-icon-container" onclick="selected(event, this)">
+      <img
+        class="condition-icon"
+        src="img/Condition Icons/Charmed.png"
+        alt="Charmed-icon"
+      />
+      <div class="condition-text">Charmed</div>
+    </div>
+  </div>
+
+
+
+      <script src="initative-tracker.js"></script>
 </body>
 </html>

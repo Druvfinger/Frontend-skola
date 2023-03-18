@@ -22,23 +22,27 @@ function expandConditionbar(){
 }
 
 
+let testArray = [
+    {image: "img/Condition Icons/Advantage.png",text:"Advantage", id: 1},
+    {image: "img/Condition Icons/Disadvantage.png",text:"Disadvantage", id:2},
+    {image: "img/Condition Icons/Charmed.png",text:"Charmed", id:3}
+]
+
+
+function swap(event, item){
+    //what we clicked values
+    let temparr = Array.from(item.children)
+    let pickedImage = temparr[0].src
+    let id = temparr[0].id
+    let pickedText = temparr[1].innerHTML
+    //values to change to
+    let imageToChangeTo
 
     /*
-    if(item.parentNode === x){
-        console.log("yes");
-    }
-    }
+    temparr[0].src = testArray[1].image
+    temparr[1].innerHTML = testArray[1].text
+    testArray[1].image = temparr[0].src
+    console.log(temparr[0].src) */
+}
 
-
-
-/*
-characterbar container
-    character picture container
-    character container
-
-    condition bar
-
-    popout container
-
-*/
-
+console.log()
